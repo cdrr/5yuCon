@@ -1,0 +1,16 @@
+{
+    "name": "5yuCon",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "server.js"
+    },
+    "dependencies": {
+        "async": "0.2.1.0",
+        "mongoose": "3.8.11",
+        "later": "1.1.3",
+        "superagent": "0.18.0",
+        "cheerio": "0.16.0",
+        "Q": "0.9.7"
+    }
+}
