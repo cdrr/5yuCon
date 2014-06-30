@@ -141,7 +141,7 @@ function parserArticle (website, list, errorList, callback){
                         title : $('.post h2').text(),
                         time :  $('.post .info .date').text(),
                         author :  $('.post .author').text(),
-                        content :  $('.post .content').text(),
+                        content : $('.post .content').html(),
                         link: list.url
                     };
 
@@ -154,7 +154,7 @@ function parserArticle (website, list, errorList, callback){
                         title : $('#content h2').text(),
                         time :  $('.post .info .date').text(),
                         author :  'zhangxinxu',
-                        content :  $('.entry').text(),
+                        content : $('.entry').html(),
                         link: list.url
                     };
 
@@ -165,7 +165,7 @@ function parserArticle (website, list, errorList, callback){
                         title : $('.post-title a').text(),
                         time :  $('.published').text(),
                         author : $('.author a').text(),
-                        content :  $('.post-content').text(),
+                        content :  $('.post-content').html(),
                         link: list.url
                     };
 
@@ -176,7 +176,7 @@ function parserArticle (website, list, errorList, callback){
                         title : $('.p-cont > h2').text(),
                         time :  $('.date').text(),
                         author : '张丹',
-                        content :  $('.entry').text(),
+                        content :  $('.entry').html(),
                         link: list.url
                     };
 
@@ -187,7 +187,7 @@ function parserArticle (website, list, errorList, callback){
                         title : $('#page-title').text(),
                         time :  $('.asset-footer .published').text(),
                         author :  '阮一峰',
-                        content :  $('#main-content').text(),
+                        content :  $('#main-content').html(),
                         link:list.url
                     };
 
@@ -200,7 +200,7 @@ function parserArticle (website, list, errorList, callback){
                         title : $('h1').text(),
                         time :  $('.date > span').text(),
                         author :  'ARGV',
-                        content :  $('.page-header').next().text(),
+                        content : $('.page-header').next().html(),
                         link:list.url
                     };
 
@@ -211,7 +211,7 @@ function parserArticle (website, list, errorList, callback){
                         title : $('.storytitle > a').text(),
                         time :  '',
                         author :  'WebShell',
-                        content :  $('.storycontent').text(),
+                        content :  $('.storycontent').html(),
                         link:list.url
                     };
 
